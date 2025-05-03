@@ -26,9 +26,7 @@
             </svg>
             </button>
         </div>
-        <button type="submit" class="w-full py-3 bg-black bg-opacity-30 backdrop-blur-md rounded-full font-semibold text-black hover:bg-opacity-50 transition">
-            Login
-        </button>
+        <button type="submit" class="w-full py-3 bg-black bg-opacity-30 backdrop-blur-md rounded-full font-semibold text-black hover:bg-opacity-50 transition">Login</button>
         </form>
     </div>
 
