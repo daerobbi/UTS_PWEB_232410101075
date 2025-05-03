@@ -1,4 +1,3 @@
-
 <nav class="bg-green-700 text-white fixed top-0 w-full z-50 shadow-md">
     <div class="flex items-center justify-between w-full px-4 py-3">
         <div class="flex items-center space-x-2">
