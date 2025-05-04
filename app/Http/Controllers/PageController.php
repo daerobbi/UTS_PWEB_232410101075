@@ -89,6 +89,48 @@ class PageController extends Controller
             'jumlah_tanam' => 125,
             'jumlah_panen' => 125,
         ],
+        [
+            'tanggal_tanam' => '22/04/2025',
+            'tanggal_panen' => '30/04/2025',
+            'nama_bibit'    => 'Cabe Rawit',
+            'jumlah_tanam' => 125,
+            'jumlah_panen' => 125,
+        ],
+        [
+            'tanggal_tanam' => '22/04/2025',
+            'tanggal_panen' => '01/05/2025',
+            'nama_bibit'    => 'Terong Hijau',
+            'jumlah_tanam' => 125,
+            'jumlah_panen' => 125,
+        ],
+        [
+            'tanggal_tanam' => '22/04/2025',
+            'tanggal_panen' => '01/05/2025',
+            'nama_bibit'    => 'Sawi',
+            'jumlah_tanam' => 125,
+            'jumlah_panen' => 125,
+        ],
+        [
+            'tanggal_tanam' => '22/04/2025',
+            'tanggal_panen' => '30/04/2025',
+            'nama_bibit'    => 'Cabe Rawit',
+            'jumlah_tanam' => 125,
+            'jumlah_panen' => 125,
+        ],
+        [
+            'tanggal_tanam' => '22/04/2025',
+            'tanggal_panen' => '01/05/2025',
+            'nama_bibit'    => 'Terong Hijau',
+            'jumlah_tanam' => 125,
+            'jumlah_panen' => 125,
+        ],
+        [
+            'tanggal_tanam' => '22/04/2025',
+            'tanggal_panen' => '01/05/2025',
+            'nama_bibit'    => 'Sawi',
+            'jumlah_tanam' => 125,
+            'jumlah_panen' => 125,
+        ],
     ];
 
     public function index(Request $request)
