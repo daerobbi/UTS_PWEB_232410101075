@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
-
-Route::get('/home', function () {
-    return view('dashboard');
-});
-
-Route::get('/pengelolaan', function () {
-    return view('pengelolaan');
-});
+Route::get('/', [PageController::class, 'showLogin'])->name('login');
+Route::post('/login', [PageController::class, 'login'])->name('login.submit');
+Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
+Route::get('/pengelolaan', [PageController::class, 'index'])->name('bibit.index');

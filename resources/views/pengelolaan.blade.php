@@ -7,7 +7,6 @@
 </div>
 </section>
 
-<!-- Table -->
 <section class="py-6">
 <div class="max-w-6xl mx-auto px-4 overflow-x-auto">
     <table class="min-w-full bg-green-200 border border-black text-sm md:text-base">
@@ -22,30 +21,16 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($bibitData as $index => $bibit)
             <tr class="border-black">
-                <td class="p-3">1.</td>
-                <td class="p-3">22/04/2025</td>
-                <td class="p-3">30/04/2025</td>
-                <td class="p-3">Cabe Rawit</td>
-                <td class="p-3 font-bold">125</td>
-                <td class="p-3 font-bold">125</td>
+                <td class="p-3">{{ $index + 1 }}.</td>
+                <td class="p-3">{{ $bibit['tanggal_tanam'] }}</td>
+                <td class="p-3">{{ $bibit['tanggal_panen'] }}</td>
+                <td class="p-3">{{ $bibit['nama_bibit'] }}</td>
+                <td class="p-3 font-bold">{{ $bibit['jumlah_tanam'] }}</td>
+                <td class="p-3 font-bold">{{ $bibit['jumlah_panen'] }}</td>
             </tr>
-            <tr class="border-black">
-                <td class="p-3">2.</td>
-                <td class="p-3">22/04/2025</td>
-                <td class="p-3">1/05/2025</td>
-                <td class="p-3">Terong Hijau</td>
-                <td class="p-3 font-bold">125</td>
-                <td class="p-3 font-bold">125</td>
-            </tr>
-            <tr>
-                <td class="p-3">3.</td>
-                <td class="p-3">22/04/2025</td>
-                <td class="p-3">1/05/2025</td>
-                <td class="p-3">Sawi</td>
-                <td class="p-3 font-bold">125</td>
-                <td class="p-3 font-bold">125</td>
-            </tr>
+            @endforeach
         </tbody>
     </table>
 </div>

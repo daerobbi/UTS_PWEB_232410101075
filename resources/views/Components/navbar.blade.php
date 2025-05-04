@@ -4,14 +4,12 @@
             <span class="text-xl font-semibold">AgriHive</span>
         </div>
 
-        <!-- Menu pilihan navbar di Kanan -->
         <div class="hidden md:flex space-x-6 ml-auto">
-            <a href="#" class="font-semibold text-yellow-300">Beranda</a>
-            <a href="#" class="hover:text-yellow-300">Pengelolaan Bibit</a>
-            <a href="#" class="hover:text-yellow-300">Akun</a>
+            <a href="{{ route('dashboard', ['email' => session('username')]) }} "class="hover:text-yellow-300 {{ request()->is('dashboard') ? 'text-yellow-500' : '' }}">Beranda</a>
+            <a href="{{ route('bibit.index') }}" class="hover:text-yellow-300 {{ request()->is('pengelolaan') ? 'text-yellow-500' : '' }}">Pengelolaan Bibit</a>
+            <a href="#" class="hover:text-yellow-300 {{ request()->is('akun') ? 'text-yellow-500' : '' }}">Akun</a>
         </div>
 
-        <!-- Tombol menu untuk versi mobile -->
         <div class="md:hidden">
             <button id="menu-button" class="focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -21,17 +19,17 @@
         </div>
     </div>
 
-    <!-- Menu mobile -->
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
-        <a href="#" class="block hover:text-yellow-300">Beranda</a>
-        <a href="#" class="block hover:text-yellow-300">Pengelolaan Bibit</a>
-        <a href="#" class="block hover:text-yellow-300">Akun</a>
+        <a href="{{ route('dashboard', ['email' => session('username')]) }}" class="block hover:text-yellow-300 {{ request()->is('dashboard') ? 'text-yellow-500' : '' }}">Beranda</a>
+        <a href="{{ route('bibit.index') }}" class="block hover:text-yellow-300 {{ request()->is('pengelolaan') ? 'text-yellow-500' : '' }}">Pengelolaan Bibit</a>
+        <a href="#" class="block hover:text-yellow-300 {{ request()->is('akun') ? 'text-yellow-500' : '' }}">Akun</a>
     </div>
 </nav>
+
 <script>
     const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     menuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('hidden');
     });
 </script>

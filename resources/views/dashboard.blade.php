@@ -9,7 +9,7 @@
 
 <section class="max-w-[1600px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-center min-h-[80vh] -mt-8 px-6 py-16">
     <div class="lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-left">
-        <h1 class="text-4xl md:text-5xl font-light mb-4">Selamat Datang, <span class="font-bold">Rekan Tani !</span></h1>
+        <h1 class="text-4xl md:text-5xl font-light mb-4">Selamat Datang, <span class="font-bold">{{ session('username', 'Rekan Tani') }}!</span></h1>
         <h2 class="text-4xl md:text-5xl font-bold text-green-700 mb-6">Di AgriHive</h2>
         <p class="text-gray-700 mb-8 text-base md:text-lg">
             <span class="font-bold">AgriHive</span> adalah platform digital yang dirancang untuk membantu rekan tani dalam menerima pengajuan bibit dari agen secara cepat, menjangkau lebih banyak mitra baru, dan mengelola beragam katalog produk hortikultura. Lewat sistem terpadu, Anda bisa melihat broadcast kebutuhan agen, serta memastikan pasokan bibit selalu siap dan terdistribusi tepat sasaran.
