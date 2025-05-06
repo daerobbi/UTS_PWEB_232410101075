@@ -10,7 +10,7 @@ class PageController extends Controller
         [
             'username' => 'suyanto',
             'email' => 'suyantomanja@gmail.com',
-            'password' => 'password123',
+            'password' => 'suyanto123',
             'lokasi' => 'Ambulu, Jember, Jawa Timur, Indonesia',
             'tentang' => 'Saya seorang petani yang berfokus pada keberlanjutan pertanian dan pengembangan bibit unggul.',
             'bidang' => 'Pertanian Organik',
@@ -20,7 +20,7 @@ class PageController extends Controller
         [
             'username' => 'suyatman',
             'email' => 'suyatmanaja@gmail.com',
-            'password' => 'password123',
+            'password' => 'suyatman123',
             'lokasi' => 'Maesan, Bondowoso, Jawa Timur, Indonesia',
             'tentang' => 'Saya petani sayuran yang fokus pada produksi organik dan distribusi lokal.',
             'bidang' => 'Pertanian Sayuran',
