@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>AgriHive</title>
     @vite('resources/css/app.css')
 </head>
 <body class="min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://asset.kompas.com/crops/ClP2DNhDGCeuWNcnfrGX5aCEwp0=/234x51:1920x1175/1200x800/data/photo/2021/05/24/60aa917e6ac4b.jpg');">
