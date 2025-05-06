@@ -5,9 +5,9 @@
         </div>
 
         <div class="hidden md:flex space-x-6 ml-auto">
-            <a href="{{ route('dashboard', ['email' => session('username')]) }} "class="hover:text-yellow-300 {{ request()->is('dashboard') ? 'text-yellow-500' : '' }}">Beranda</a>
-            <a href="{{ route('bibit.index') }}" class="hover:text-yellow-300 {{ request()->is('pengelolaan') ? 'text-yellow-500' : '' }}">Pengelolaan Bibit</a>
-            <a href="#" class="hover:text-yellow-300 {{ request()->is('akun') ? 'text-yellow-500' : '' }}">Akun</a>
+            <a href="{{ route('dashboard', ['username' => session('username')]) }} "class="hover:text-yellow-300 {{ request()->is('dashboard') ? 'text-yellow-500' : '' }}">Beranda</a>
+            <a href="{{ route('pengelolaan', ['username' => $username]) }}" class="hover:text-yellow-300 {{ request()->is('pengelolaan') ? 'text-yellow-500' : '' }}">Pengelolaan Bibit</a>
+            <a href="{{ route('profile', ['username' => $username]) }}" class="hover:text-yellow-300 {{ request()->is('akun') ? 'text-yellow-500' : '' }}">Profile</a>
         </div>
 
         <div class="md:hidden">
@@ -21,8 +21,8 @@
 
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
         <a href="{{ route('dashboard', ['email' => session('username')]) }}" class="block hover:text-yellow-300 {{ request()->is('dashboard') ? 'text-yellow-500' : '' }}">Beranda</a>
-        <a href="{{ route('bibit.index') }}" class="block hover:text-yellow-300 {{ request()->is('pengelolaan') ? 'text-yellow-500' : '' }}">Pengelolaan Bibit</a>
-        <a href="#" class="block hover:text-yellow-300 {{ request()->is('akun') ? 'text-yellow-500' : '' }}">Akun</a>
+        <a href="{{ route('pengelolaan', ['username' => $username]) }}" class="block hover:text-yellow-300 {{ request()->is('pengelolaan') ? 'text-yellow-500' : '' }}">Pengelolaan Bibit</a>
+        <a href="{{ route('profile', ['username' => $username]) }}" class="block hover:text-yellow-300 {{ request()->is('akun') ? 'text-yellow-500' : '' }}">Profile</a>
     </div>
 </nav>
 

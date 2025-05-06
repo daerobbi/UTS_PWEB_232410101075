@@ -9,8 +9,6 @@
 <body class="min-h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('https://asset.kompas.com/crops/ClP2DNhDGCeuWNcnfrGX5aCEwp0=/234x51:1920x1175/1200x800/data/photo/2021/05/24/60aa917e6ac4b.jpg');">
     <div class="bg-white bg-opacity-30 backdrop-blur-md p-6 sm:p-8 rounded-xl shadow-md w-11/12 sm:w-full max-w-sm mx-4">
         <h2 class="text-xl sm:text-2xl font-bold text-center mb-6 text-black">Login</h2>
-
-        <!-- Menampilkan pesan sukses atau error -->
         @if (session('success'))
             <div class="bg-green-100 text-green-700 p-2 rounded mb-4 text-center">
                 {{ session('success') }}
@@ -26,7 +24,7 @@
         <form action="{{ route('login.submit') }}" method="POST">
             @csrf
             <div class="mb-4">
-                <input type="email" name="email" placeholder="blabla@gmail.com"
+                <input type="text" name="username" placeholder="username"
                     class="w-full p-3 rounded-md bg-black bg-opacity-20 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-200 text-black" required>
             </div>
             <div class="mb-4 relative">
